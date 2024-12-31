@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <button class="boton-inicio" onclick="showCard()">INVITACION</button>
+
+    <div class="card" id="romantic-card">
+        <h1 class="titulo">Te invito  a mi Cumpleaños</h1>
+        <p></p>
+        <p class="mensaje">
+            Numero 12 <br><br>
+            Este se realizara el dia Jueves 02 de Enero 2025 <br>
+            a las 17:00 Horas <br>
+           <br><br>
+           En mall Go! Florida <br>
+            📍 Direccion: Av. Colin Talca.<br>
+            🎈 🎉 🎁
+           
+            
+        </p>
+        <div class="imagen"> No Faltes.. </div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI-ZpTqmUtJmrz58u_W4dg0HR9uXPr8VbcrA&s" alt="imagen-central" class="imagene-central">
+
+        <div class="parte-final">
+           Te estare esperando en la entrada del mall
+        </div>
+    </div>
+
+    <script>
+        function showCard() {
+            document.getElementById('romantic-card').classList.add('visible');
+        }
+    </script> 
+</body>
+</html>
