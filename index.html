@@ -4,7 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css">
+  
+    <style>
+        body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI-ZpTqmUtJmrz58u_W4dg0HR9uXPr8VbcrA&s") ;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.boton-inicio {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: rgb(250, 92, 224);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+    margin: 20px;
+      
+}
+
+.boton-inicio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    display: none;
+    max-width: 95%;
+    width: 600px;
+    margin: 20px auto;
+    background-color: rgb(252, 203, 245);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s;
+}
+
+.card.visible {
+    display: block;
+    animation: alternate 1s;
+}
+
+.titulo {
+    color: blue;
+    font-size: 3em;
+    margin: 20px 0;
+    font-family: cursive;
+}
+
+.mensaje {
+    color: blue;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.parte-final {
+    color: brown;
+    font-size: 1.5em;
+    margin: 20px 0;
+    margin-top: 30px;
+    font-family: cursive;
+
+}
+
+.imagen {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2em;
+    }
+    .intro-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .card {
+        width: 80%;
+        padding: 15px;
+    }
+    .signature {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5em;
+    }
+    .intro-button {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+    .message {
+        font-size: 0.9em;
+    }
+    .signature {
+        font-size: 1em;
+    }
+}
+
+
+    </style>
 </head>
 <body>
     <button class="boton-inicio" onclick="showCard()">INVITACION</button>
